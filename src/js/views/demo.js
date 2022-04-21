@@ -9,38 +9,104 @@ import "../../styles/demo.css";
 
 export const Demo = () => {
 	const { store, actions } = useContext(Context);
+	const pic = "https://via.placeholder.com/250"
 
+	
 	return (
 		<div className="container">
-			<div className="d-flex">
+			<div className="card-group">
 				{store.characters.map((item, index) => {
 					return (
+					// <Card name={item.name} gender={item.gender} hair_color={item.hair_color} eye_color={item.eye_color} index={"/single/" + index}/>
 						<div
 							key={index}
 							className="card">
 							
-							<img src="https://www.gannett-cdn.com/presto/2020/02/27/USAT/d47053e3-406f-4b6c-bcea-f9822724c2f5-luke-skywalker.jpeg" class="card-img-top" alt="..."></img>	
+							<img src={pic} class="card-img-top" alt="..."></img>	
 							<div className="card-body">
-								<h5 className="card-title"><Link to={"/single/" + index}>
-								<span>{item.name}</span>
+								<h5 className="card-title">
+									{item.name}
+								</h5>
+							
 								
-							</Link></h5>
+								<h6>Gender: {item.gender}</h6>
+								<h6>Hair Color: {item.hair_color}</h6>
+								<h6>Eye Color: {item.eye_color}</h6>
+							</div>
+							<div className="card-footer bg-transparent border-0">
+								<Link to={"/single/" + index} style={{textDecoration:"none", color: "white"}}>
+									<button className="btn btn-success"> 
+										Learn More
+									</button>
+								</Link>
 								
-							<span>Gender:{item.gender}</span>
-								<span>Hair Color:{item.hair_color}</span>
-								<span>Eye Color:{item.eye_color}</span>
-							{// Conditional render example
-							// Check to see if the background is orange, if so, display the message
-							item.background === "orange" ? (
-								<p style={{ color: item.initial }}>
-									Check store/flux.js scroll to the actions to see the code
-								</p>
-							) : null}
-							<button className="btn btn-success" onClick={() => actions.changeColor(index, "orange")}>
-								Learn More
-							</button></div>
+									
+							</div>
+						</div>
+						
+					);
+				})}
+			</div>
+			<br />
+			<div className="card-group">
+				{store.planets.map((item, index) => {
+					return (
+					// <Card name={item.name} gender={item.gender} hair_color={item.hair_color} eye_color={item.eye_color} index={"/single/" + index}/>
+						<div
+							key={index}
+							className="card">
+							
+							<img src={pic} class="card-img-top" alt="..."></img>	
+							<div className="card-body">
+								<h5 className="card-title">
+									{item.name}
+								</h5>
+							
+								
+								<h6>Population: {item.population}</h6>
+								<h6>Climate: {item.climate}</h6>
+								<h6>Terrain: {item.terrain}</h6>
+							</div>
+							<div className="card-footer bg-transparent border-0">
+								<Link to={"/single/" + index} style={{textDecoration:"none", color: "white"}}>
+									<button className="btn btn-success"> 
+										Learn More
+									</button>
+								</Link>
+							</div>		
 							
 						</div>
+						
+					);
+				})}
+			</div>
+			<br />
+			<div className="card-group">
+				{store.starships.map((item, index) => {
+					return (
+					// <Card name={item.name} gender={item.gender} hair_color={item.hair_color} eye_color={item.eye_color} index={"/single/" + index}/>
+						<div
+							key={index}
+							className="card">
+							
+							<img src={pic} class="card-img-top" alt="..."></img>	
+							<div className="card-body">
+								<h5 className="card-title">
+									{item.name}
+								</h5>															
+								<h6>Top Speed: {item.max_atmosphering_speed}</h6>
+								<h6>Crew Size: {item.crew}</h6>
+								<h6>Cost: {item.cost_in_credits}</h6>
+							</div>	
+							<div className="card-footer bg-transparent border-0">
+								<Link to={"/single/" + index} style={{textDecoration:"none", color: "white"}}>
+									<button className="btn btn-success"> 
+										Learn More
+									</button>
+								</Link>
+							</div>													
+						</div>
+						
 					);
 				})}
 			</div>
