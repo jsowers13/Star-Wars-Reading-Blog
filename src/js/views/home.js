@@ -7,7 +7,12 @@ import "../../styles/home.css";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
-  //   const pic = "https://via.placeholder.com/250";
+  const pic = "https://via.placeholder.com/250";
+  const pic1 = "https://wallpapercave.com/wp/66NfovO.jpg";
+  const pic2 =
+    "https://swtorstrategies.com/wp-content/uploads/2010/01/tatooine-300x300.jpg";
+  const pic3 =
+    "https://www.giantbomb.com/a/uploads/original/15/155745/2192605-dsi_hdapproach.jpg";
 
   return (
     <div className="parent">
@@ -17,7 +22,7 @@ export const Home = () => {
           return (
             <Card
               name={item.name}
-              pic="https://via.placeholder.com/250"
+              pic={pic}
               group="characters"
               first_att="Gender"
               first_loc={item.gender}
@@ -31,7 +36,6 @@ export const Home = () => {
           );
         })}
       </div>
-
       <br />
       <h1>Planets</h1>
       <div className="d-flex flex-direction-row w-100 cards">
@@ -39,7 +43,7 @@ export const Home = () => {
           return (
             <Card
               name={item.name}
-              pic="https://via.placeholder.com/250"
+              pic={pic2}
               group="planets"
               first_att="Population"
               first_loc={item.population}
@@ -70,7 +74,7 @@ export const Home = () => {
           return (
             <Card
               name={item.name}
-              pic="https://via.placeholder.com/250"
+              pic={pic3}
               group="starships"
               first_att="Top Speed"
               first_loc={item.max_atmosphering_speed}

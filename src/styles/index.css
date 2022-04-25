@@ -1,3 +1,7 @@
 /* 
     General Styles
 */
+*{
+    background:black;
+    color:whitesmoke;
+}

@@ -1,5 +1,8 @@
 .cards{
     overflow-x:scroll;
+    
+    width:120%;
+    height: 500px;
 }
 .parent{
     padding-left: 100px;
