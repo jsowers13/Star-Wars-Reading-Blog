@@ -35,19 +35,31 @@ export const Planets = (props) => {
         </p>
         <hr className="my-4"></hr>
         <div className="row">
-          <div className="col-4 text-center">Population</div>
-          <div className="col-4 text-center">Climate</div>
-          <div className="col-4 text-center">Terrain</div>
+          <div className="col-2 text-center">Population</div>
+          <div className="col-2 text-center">Climate</div>
+          <div className="col-2 text-center">Terrain</div>
+          <div className="col-2 text-center">Diameter</div>
+          <div className="col-2 text-center">Gravity</div>
+          <div className="col-2 text-center">Orbital Period</div>
         </div>
         <div className="row">
-          <div className="col-4 text-center">
+          <div className="col-2 text-center">
             {store.planets[params.theid].population}
           </div>
-          <div className="col-4 text-center">
+          <div className="col-2 text-center">
             {store.planets[params.theid].climate}
           </div>
-          <div className="col-4 text-center">
+          <div className="col-2 text-center">
             {store.planets[params.theid].terrain}
+          </div>
+          <div className="col-2 text-center">
+            {store.planets[params.theid].diameter}
+          </div>
+          <div className="col-2 text-center">
+            {store.planets[params.theid].gravity}
+          </div>
+          <div className="col-2 text-center">
+            {store.planets[params.theid].orbital_period}
           </div>
         </div>
         <p className="lead">

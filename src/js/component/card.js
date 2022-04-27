@@ -12,7 +12,12 @@ export const Card = (props) => {
   return (
     <div className="card-group ">
       <div className="card border-0" style={{ width: 250 + "px" }}>
-        <img src={props.pic} className="card-img-top" alt="..."></img>
+        <Link
+          to={"/" + [props.group] + "/" + [props.index]}
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          <img src={props.pic} className="card-img-top" alt="..."></img>
+        </Link>
         <div className="card-body ">
           <h5 className="card-title">{props.name}</h5>
 

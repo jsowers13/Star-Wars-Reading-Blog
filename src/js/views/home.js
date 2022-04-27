@@ -8,7 +8,7 @@ import "../../styles/home.css";
 export const Home = () => {
   const { store, actions } = useContext(Context);
   const pic = "https://via.placeholder.com/250";
-  const pic1 = "https://wallpapercave.com/wp/66NfovO.jpg";
+  const pic1 = "https://api.time.com/wp-content/uploads/2017/12/r2d2.jpg";
   const pic2 =
     "https://swtorstrategies.com/wp-content/uploads/2010/01/tatooine-300x300.jpg";
   const pic3 =
@@ -22,7 +22,7 @@ export const Home = () => {
           return (
             <Card
               name={item.name}
-              pic={pic}
+              pic={pic1}
               group="characters"
               first_att="Gender"
               first_loc={item.gender}

@@ -35,19 +35,31 @@ export const Starships = (props) => {
         </p>
         <hr className="my-4"></hr>
         <div className="row">
-          <div className="col-4 text-center">Top Speed</div>
-          <div className="col-4 text-center">Crew Size</div>
-          <div className="col-4 text-center">Cost</div>
+          <div className="col-2 text-center">Top Speed</div>
+          <div className="col-2 text-center">Crew Size</div>
+          <div className="col-2 text-center">Cost</div>
+          <div className="col-2 text-center">Manufacturer</div>
+          <div className="col-2 text-center">Passengers</div>
+          <div className="col-2 text-center">Hyperdrive Rating</div>
         </div>
         <div className="row">
-          <div className="col-4 text-center">
+          <div className="col-2 text-center">
             {store.starships[params.theid].max_atmosphering_speed}
           </div>
-          <div className="col-4 text-center">
+          <div className="col-2 text-center">
             {store.starships[params.theid].crew}
           </div>
-          <div className="col-4 text-center">
+          <div className="col-2 text-center">
             {store.starships[params.theid].cost_in_credits}
+          </div>
+          <div className="col-2 text-center">
+            {store.starships[params.theid].manufacturer}
+          </div>
+          <div className="col-2 text-center">
+            {store.starships[params.theid].passengers}
+          </div>
+          <div className="col-2 text-center">
+            {store.starships[params.theid].hyperdrive_rating}
           </div>
         </div>
         <p className="lead">

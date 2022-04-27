@@ -5,7 +5,11 @@ export const Navbar = () => {
   return (
     <nav className="navbar  mb-3">
       <Link to="/">
-        <span className="navbar-brand mb-0 ms-5 h1">Star Wars</span>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/33/Star_Wars_logo.jpg"
+          className="navbar-brand mb-0 ms-5 h1"
+          style={{ height: 100 + "px" }}
+        ></img>
       </Link>
       <div className="ml-auto">
         <div className="dropdown">

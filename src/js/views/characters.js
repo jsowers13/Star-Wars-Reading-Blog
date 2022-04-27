@@ -35,19 +35,31 @@ export const Characters = (props) => {
         </p>
         <hr className="my-4"></hr>
         <div className="row">
-          <div className="col-4 text-center">Gender</div>
-          <div className="col-4 text-center">Hair Color</div>
-          <div className="col-4 text-center">Eye Color</div>
+          <div className="col-2 text-center">Gender</div>
+          <div className="col-2 text-center">Hair Color</div>
+          <div className="col-2 text-center">Eye Color</div>
+          <div className="col-2 text-center">Height</div>
+          <div className="col-2 text-center">Mass</div>
+          <div className="col-2 text-center">Birth Year</div>
         </div>
         <div className="row">
-          <div className="col-4 text-center">
+          <div className="col-2 text-center">
             {store.characters[params.theid].gender}
           </div>
-          <div className="col-4 text-center">
+          <div className="col-2 text-center">
             {store.characters[params.theid].hair_color}
           </div>
-          <div className="col-4 text-center">
+          <div className="col-2 text-center">
             {store.characters[params.theid].eye_color}
+          </div>
+          <div className="col-2 text-center">
+            {store.characters[params.theid].height}
+          </div>
+          <div className="col-2 text-center">
+            {store.characters[params.theid].mass}
+          </div>
+          <div className="col-2 text-center">
+            {store.characters[params.theid].birth_year}
           </div>
         </div>
         <p className="lead">
