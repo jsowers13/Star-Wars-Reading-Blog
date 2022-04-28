@@ -12,7 +12,7 @@ export const Home = () => {
   const pic2 =
     "https://swtorstrategies.com/wp-content/uploads/2010/01/tatooine-300x300.jpg";
   const pic3 =
-    "https://www.giantbomb.com/a/uploads/original/15/155745/2192605-dsi_hdapproach.jpg";
+    "https://technabob.com/blog/wp-content/uploads/2014/08/falcon-960.jpg";
 
   return (
     <div className="parent">
@@ -98,10 +98,6 @@ export const Home = () => {
         third_att="Cost"
         third_loc="cost_in_credits"
       /> */}
-      <br />
-      <Link to="/">
-        <button className="btn btn-primary">Back home</button>
-      </Link>
     </div>
   );
 };

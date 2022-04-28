@@ -62,7 +62,8 @@ export const Planets = (props) => {
             {store.planets[params.theid].orbital_period}
           </div>
         </div>
-        <p className="lead">
+        <br></br>
+        <p className="lead my-3 text-center">
           <Link to="/">
             <span className="btn btn-primary btn-lg" href="#" role="button">
               Back home

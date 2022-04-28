@@ -62,7 +62,8 @@ export const Characters = (props) => {
             {store.characters[params.theid].birth_year}
           </div>
         </div>
-        <p className="lead">
+        <br></br>
+        <p className="lead my-3 text-center">
           <Link to="/">
             <span className="btn btn-primary btn-lg" href="#" role="button">
               Back home
