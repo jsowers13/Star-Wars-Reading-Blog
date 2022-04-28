@@ -38,7 +38,12 @@ export const Card = (props) => {
           >
             <button className="btn btn-success">Learn More</button>
           </Link>
-          <button className="btn btn-primary ms-5">Save</button>
+          <button
+            className="btn btn-primary ms-5"
+            onClick={() => actions.getFavorites(props.name)}
+          >
+            Save{" "}
+          </button>
         </div>
       </div>
     </div>
